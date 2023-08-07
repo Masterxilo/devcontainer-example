@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+trap 'echo FATAL ERROR at $0:$LINENO' ERR
+
+echo "Hello, you are running on:"
+lsb_release -a
