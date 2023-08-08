@@ -1,5 +1,6 @@
 FROM ubuntu
 
+RUN apt update
 # without these, the devcontainers extension will not copy your .gitconfig into the container, see
 # https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials
 RUN apt-get update && apt-get install -y git ssh
